@@ -1,0 +1,1 @@
+In this project, each script does what it is supposed to do
