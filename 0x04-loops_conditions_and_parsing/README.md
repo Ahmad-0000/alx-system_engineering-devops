@@ -1,5 +1,5 @@
 ## Loops, conditions and parsing
-![logo](assets/bash_logo.png)
+![logo](assets/bash_logo.jpg)
 # Description
 This project is about ***Loops, Conditions and Parsing*** in **Bash**.
 > [!NOTE]
