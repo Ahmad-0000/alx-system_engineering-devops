@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This is a bash script for learnig how to use
+# "cut" command, it's about listing this dir
+# content with each item has the letters before
+# the first dash execluded incluing the dash
+
+for i in * ; do
+  echo "$i" | cut -d '-' -f 2
+done
