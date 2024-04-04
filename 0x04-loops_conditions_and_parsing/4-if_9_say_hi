@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-# This is a bash script for printing "Best School" 9 times and "Hi" once
+# This is a bash script for printing "Best School" 10 times and "Hi" once
 
 i=0
 
 while [ "$i" -lt 10 ]; do
   if [ "$i" = 8 ]
   then
-    echo "Hi"
+    echo -e "Best School\nHi"
   else
     echo "Best School"
   fi
