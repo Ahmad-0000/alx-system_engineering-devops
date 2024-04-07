@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# This is a script to check if a host (server) is on
+# the internet or not, the host IP address is passed
+# as a command line argument
+
+if [ $# -eq 1 ]
+then
+  ping -c 5 "$1"
+else
+  echo "Usage: 5-is_the_host_on_the_network (IP_ADDRESS)"
+fi
