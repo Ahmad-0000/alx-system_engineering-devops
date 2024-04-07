@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This is a script to list litening ports, with the PID
+# of each program to which the socket belongs
+
+netstat -lp
