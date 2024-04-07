@@ -2,7 +2,7 @@
 ## Description
 This my alx first ***Networking Basics*** project.
 Understaning networking is a crucial thing when 
-managing servers, back-end development, ...etc
+managing servers, back-end development, ...etc.
 This project aim is to understand ***OSI Model*** 
 generally, and mainly:
 * TCP/IP
