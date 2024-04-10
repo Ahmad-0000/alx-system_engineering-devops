@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-sed s/127.0.0.1/127.0.0.2/g  /etc/hosts > temp
-mv temp /etc/hosts
-sed s/157.240.11.35/8.8.8.8/g /etc/hosts > temp
-mv temp /etc/hosts
-rm temp
+cp /etc/hosts ~/hosts.new
+sed s/127.0.0.1/127.0.0.2/g ~/hosts.new
+sed s/157.240.11.35/8.8.8.8/g ~/host.new
+cp -f ~/hosts.new /etc/hosts
