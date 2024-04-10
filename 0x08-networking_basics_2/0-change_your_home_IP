@@ -2,6 +2,9 @@
 # This is a script to change "localhost" and "facebook.com"
 # resolution addresses on the "/etc/hosts" file
 cp /etc/hosts ~/hosts.new
-sed s/127.0.0.1/127.0.0.2/g ~/hosts.new
-sed s/157.240.11.35/8.8.8.8/g ~/host.new
+sed s/'127.0.0.1'/'127.0.0.2'/g ~/hosts.new > temp
+cp -f temp ~/hosts.new
+sed s/'157.240.11.35'/'8.8.8.8'/g ~/hosts.new > temp
+cp -f temp ~/hosts.new
+rm temp
 cp -f ~/hosts.new /etc/hosts
