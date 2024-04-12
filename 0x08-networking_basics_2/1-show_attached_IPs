@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This is a shell script to show the IPv4 addresses that
+# are attached to active internet interfaces
+
+ifconfig | grep "inet " | cut -d " " -f 10
