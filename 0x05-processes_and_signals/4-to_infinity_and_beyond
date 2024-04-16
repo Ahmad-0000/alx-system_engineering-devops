@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-# This is a bash script to show the statement "to_infinity_and_beyond"
+# This is a bash script to show the statement "To infinity and beyond"
 # every 2 seconds until it's terminated using SIGTERM or another
 # appropriate signal
 i=1
 
 while [ $i ]; do
-echo to infinity and beyond
+echo To infinity and beyond
 sleep 2
 done
