@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This is a bash script to kill the script "4-to_infinity_and_beyond"
+# running in another terminal AND it was executed directly before this
+# script
+kill "$(pgrep bash | tail -3 | head -1)"
