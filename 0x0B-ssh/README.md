@@ -1,4 +1,5 @@
 # SSH
+  ![a client and a host communicating using ssh](assets/ssh_logo.jpg)
 # Description
 **SSH** (secure shell) is a protocol commmonly used to connect to
 **Linux** servers over a network. It is very secure as it imployes
