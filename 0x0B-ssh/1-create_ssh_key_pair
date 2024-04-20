@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This is a bash script to generate a pair of ssh keys with 4096 bits,
+# put the private key in the file "~/.ssh/school" and add a passhrase
+# of "ahmad"
+ssh-keygen -b 4069 -f ~/.ssh/school -N ahmad
