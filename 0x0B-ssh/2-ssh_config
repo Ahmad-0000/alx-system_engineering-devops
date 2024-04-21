@@ -1,1 +1,5 @@
-IdentityFile ~/.ssh/school
+Host school_server
+  HostName 54.160.124.48
+  User ubuntu
+  IdentityFile ~/.ssh/school
+  IdentitiesOnly yes
