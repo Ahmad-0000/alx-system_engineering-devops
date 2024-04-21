@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# This is a bash script to connect to a server with the "107.23.229.14"
+# This is a bash script to connect to a server with the "54.160.124.48"
 # ip address, with the "~/.ssh/school" file being used as identity file
-ssh -i ~/.ssh/school 107.23.229.14
+ssh -i ~/.ssh/school 54.160.124.48
