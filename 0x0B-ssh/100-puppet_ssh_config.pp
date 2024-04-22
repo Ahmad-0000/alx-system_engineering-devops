@@ -10,6 +10,6 @@ Host school_server
 
 file { 'optional_task':
   ensure  => present,
-  path    => '/home/vagrant/.ssh/ssh_config',
+  path    => '/etc/ssh/ssh_config',
   content => $file_content
 }
