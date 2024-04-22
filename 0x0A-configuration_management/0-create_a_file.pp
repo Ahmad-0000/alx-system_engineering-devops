@@ -6,6 +6,6 @@ file { 'first_task':
   path    => '/tmp/school',
   mode    => '0744',
   owner   => 'www-data',
-  group   => 'www-date',
+  group   => 'www-data',
   content => "I Love Puppet\n"
 }
