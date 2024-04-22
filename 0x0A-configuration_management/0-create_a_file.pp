@@ -7,5 +7,5 @@ file { 'first_task':
   mode    => '0744',
   owner   => 'www-data',
   group   => 'www-data',
-  content => "I Love Puppet"
+  content => "I love Puppet"
 }
