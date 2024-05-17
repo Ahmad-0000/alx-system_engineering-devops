@@ -3,4 +3,5 @@
 # a webpage containing the statement "Hello, World!"
 
 apt-get -y install nginx
+nginx
 echo "Hello, World!" > /var/www/html/index.html
