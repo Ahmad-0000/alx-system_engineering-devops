@@ -3,5 +3,6 @@
 # a webpage containing the statement "Hello, World!"
 
 apt-get -y install nginx
+ufw allow "Nginx HTTP"
 rm /var/www/html/*
 echo "Hello World!" > /var/www/html/index.html
