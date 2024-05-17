@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# A bash script to install and configure "Nginx" web server to return
+# a webpage containing the statement "Hello, World!"
+
+apt-get -y install nginx
+echo "Hello, World!" > /var/www/html/index.html
