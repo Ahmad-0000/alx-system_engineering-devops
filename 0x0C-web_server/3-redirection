@@ -5,3 +5,4 @@
 lines="location /redirect_me {\t\treturn 301 /;"
 
 sed -i  "s|location / {|$lines|g" /etc/nginx/sites-available/default
+nginx -s reload
