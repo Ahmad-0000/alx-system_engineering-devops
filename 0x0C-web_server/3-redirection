@@ -4,4 +4,4 @@
 
 lines="location /redirect_me {\t\treturn 301 /;"
 
-sed  "s|location / {|$lines|g" /etc/nginx/sites-available/default
+sed -i  "s|location / {|$lines|g" /etc/nginx/sites-available/default
