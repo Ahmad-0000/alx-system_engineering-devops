@@ -2,7 +2,7 @@
 # A bash scirpt to configure Nginx server to return a status code 301
 # when visiting "/redirect_me" page
 
-lines="location /redirect_me {\t\treturn 301;"
+lines="location /redirect_me {\t\treturn 301 http://ahmad-basheer.tech;"
 
 sed -i  "s|location / {|$lines|g" /etc/nginx/sites-available/default
 nginx -s reload
