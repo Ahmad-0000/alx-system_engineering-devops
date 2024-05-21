@@ -6,3 +6,4 @@ lines="location /redirect_me {\t\treturn 301 https://www.youtube.com/watch?v=QH2
 
 sed -i  "s|location / {|$lines|g" /etc/nginx/sites-available/default
 nginx -s reload
+echo 301
