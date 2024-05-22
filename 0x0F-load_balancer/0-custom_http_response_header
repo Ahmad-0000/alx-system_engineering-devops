@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# A script to configure Nginx web server to add a custom header in the
+# response message
+
+sed -i "25i\	add_header X-Served-By server-id;" /etc/nginx/sites-available/default
