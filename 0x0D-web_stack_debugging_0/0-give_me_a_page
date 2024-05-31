@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# A script to remove the bug in the docker container "holbertonschool/265-0"
+# to make Apache2 response
+
+service apache2 start
