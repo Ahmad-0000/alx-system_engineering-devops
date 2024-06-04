@@ -4,9 +4,9 @@ import requests
 import json
 import sys
 
-id = sys.argv[1]
 
 if __name__ == "__main__":
+    id = sys.argv[1]
     user = requests.get(f"https://jsonplaceholder.typicode.com/users/{id}")
     user = json.loads(user.text)
     user_tasks = requests.\
