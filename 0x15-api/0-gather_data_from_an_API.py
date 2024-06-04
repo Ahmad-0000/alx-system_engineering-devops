@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""To be updated"""
+"""To be updated - this is just a fake documentation for now"""
 import requests
 import json
 import sys
