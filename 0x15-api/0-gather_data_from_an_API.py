@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """To be updated - this is just a fake documentation for now"""
-import requests
 import json
+import requests
 import sys
 
 
