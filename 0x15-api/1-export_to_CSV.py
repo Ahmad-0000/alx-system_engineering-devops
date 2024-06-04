@@ -15,5 +15,5 @@ if __name__ == "__main__":
     with open(f"{id}.csv", "a", encoding="utf-8") as csv:
         for t in u_tasks:
             csv.write('"{}","{}","{}","{}"\n'.format(id, u.get('username'),
-                                                        t.get('completed'),
-                                                        t.get('title')))
+                                                         t.get('completed'),
+                                                         t.get('title')))
