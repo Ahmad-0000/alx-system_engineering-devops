@@ -12,8 +12,8 @@ if __name__ == "__main__":
     u_tasks = requests.\
         get(f"https://jsonplaceholder.typicode.com/todos?userId={id}")
     u_tasks = json.loads(u_tasks.text)
-    with open(f"{id}.csv", "a", encoding="utf-8") as csv_file:
+    with open(f"{id}.csv", "a", encoding="utf-8") as csv:
         for t in u_tasks:
-            csv_file.write('"{},"{}","{}","{}"\n'.format(id, u.get('username'),
+            csv.write('"{}","{}","{}","{}"\n'.format(id, u.get('username'),
                                                         t.get('completed'),
                                                         t.get('title')))
