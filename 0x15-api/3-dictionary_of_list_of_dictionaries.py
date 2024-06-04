@@ -21,6 +21,6 @@ if __name__ == "__main__":
             del task["userId"]
             task.update({"username": u.get('username')})
             user_tasks.append(task)
-        users_dict.update({id: user_tasks})
+        users_dict.update({id + 1: user_tasks})
     with open("todo_all_employees.json", 'w', encoding="utf-8") as json_file:
         json_file.write(json.dumps(users_dict))
