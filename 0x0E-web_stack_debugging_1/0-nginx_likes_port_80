@@ -4,4 +4,5 @@
 apt update
 apt install -y nginx
 apt install -y curl
+service apache2 stop
 service nginx start
