@@ -1,4 +1,15 @@
 #!/usr/bin/env bash
 # A root script to execute a command as another user
 
-runuser -u "$1" whoami
+users="$(cat /etc/passwd | cut -d : -f 1)"
+user="$1"
+
+for _ in users
+do
+	if [ "$user" == "$_" ]
+	then
+		runuser -u "$user" whoami
+		exit
+	fi
+done
+echo "$1"
