@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # A root script to execute a command as another user
 
-users="$(cat /etc/passwd | cut -d : -f 1)"
+users="$(cut -d : -f 1 < /etc/passwd)"
 user="$1"
 
-for _ in users
+for _ in $users
 do
 	if [ "$user" == "$_" ]
 	then
