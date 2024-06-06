@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # A root script to execute a command as another user
 
-su "$1" bash -c whoami
+runuser -u "$1" whoami
