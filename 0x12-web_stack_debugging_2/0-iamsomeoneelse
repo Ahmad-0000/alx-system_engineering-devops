@@ -1,15 +1,19 @@
 #!/usr/bin/env bash
-# A root script to execute a command as another user
+# root script to execute a command as another user
 
 users="$(cut -d : -f 1 < /etc/passwd)"
 user="$1"
 
 for _ in $users
 do
-	if [ "$user" == "$_" ]
+	if [ "$_" == "$user" ]
 	then
-		runuser -u "$user" whoami
-		exit
+		fifth="$(grep "$user" /etc/passwd | cut -d : -f 5)"
+		if [ -n "$fifth" ]
+		then
+			su -c whoami "$user"
+		else
+			echo "$user"
+		fi
 	fi
 done
-echo "$1"
