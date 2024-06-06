@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 # A script to install nginx and run it
-
 apt update
 apt install -y nginx
-apt install -y curl
-service apache2 stop
 service nginx start
