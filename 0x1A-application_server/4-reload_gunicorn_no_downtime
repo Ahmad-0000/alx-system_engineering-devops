@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Reloading gunicord app server without shutting it down
 
-sudo systemctl kill -s HUP gunicorn.service
+sudo pkill --signal HUP gunicorn
