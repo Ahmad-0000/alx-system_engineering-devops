@@ -1,0 +1,41 @@
+# Configuring a server
+
+events {}
+
+http {
+		
+	include mime.types;
+		
+	server {
+		listen 80;
+		listen [::]:80;
+		
+		add_header X-Served-By 530115-web-01;
+
+		server_name www.ahmad-basheer.tech ahmad-basheer.tech;
+
+		location /hbnb_static {
+			alias /data/web_static/current;
+		}
+		
+		location / {
+			root /data/web_static/root;
+		}
+
+		location /airbnb-onepage/ {
+			include proxy_params;
+			proxy_pass http://0.0.0.0:5000;
+		}
+
+		location ~ ^/airbnb-dynamic/number_odd_or_even/(\d+) {
+			include proxy_params;
+			proxy_pass http://0.0.0.0:5001/number_odd_or_even/$1$is_args$args;
+		}
+
+		location /api/ {
+			include proxy_params;
+			proxy_pass http://0.0.0.0:5002;
+		}
+	}
+}
+
